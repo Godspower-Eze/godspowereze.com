@@ -1,5 +1,5 @@
 baseURL = "https://michaelneuper.github.io/hugo-texify3/"
-disqusShortname = ""
+disqusShortname = "SHORTNAME"
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
