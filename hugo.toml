@@ -1,5 +1,4 @@
 baseURL = "https://leafy-melba-2be4dc.netlify.app/"
-disqusShortname = "SHORTNAME"
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
