@@ -1,4 +1,4 @@
-baseURL = "https://michaelneuper.github.io/hugo-texify3/"
+baseURL = "https://leafy-melba-2be4dc.netlify.app/"
 disqusShortname = "SHORTNAME"
 enableGitInfo = true
 enableRobotsTXT = true
