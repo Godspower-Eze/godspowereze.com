@@ -3,6 +3,7 @@ author: "Godspower Eze"
 title: "Intuition Behind Differentiation"
 date: "2024-11-19"
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+keywords: ["differentiation"]
 tags: [
     "calculus",
     "differentiation"
