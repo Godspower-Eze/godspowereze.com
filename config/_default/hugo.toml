@@ -1,7 +1,6 @@
 baseURL = "https://godspowereze.com/"
 enableGitInfo = true
 enableRobotsTXT = true
-googleAnalytics = "G-ZQ15ERL7SK"
 hasCJKLanguage = true
 languageCode = "en"
 rssLimit = 10
