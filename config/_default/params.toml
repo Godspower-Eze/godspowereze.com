@@ -5,13 +5,13 @@ footnote = """
 Powered by  <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a> | 
 Theme <a class=link href=https://github.com/michaelneuper/hugo-texify3 target=_blank rel=noopener>TeXify3</a>
 """
-keywords = ["godspower", "eze", "godspower eze", "productivity"]
+keywords = ["godspower", "eze", "godspower eze"]
 dateFormat = "2 January 2006"
 emphasisWithDots = true
 toc = true
-showWordCount = true
+showWordCount = false
 showReadingTime = true
-rootFontSize = "105%"
+rootFontSize = "100%"
 math = true
 enableDuckDuckGoSearchBox = true
 numberedSubtitles = true

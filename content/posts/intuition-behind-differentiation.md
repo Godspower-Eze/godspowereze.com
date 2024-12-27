@@ -2,17 +2,15 @@
 author: "Godspower Eze"
 title: "Intuition Behind Differentiation"
 date: "2024-11-19"
-description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-keywords: ["differentiation"]
+description: "Showing the intuition behind differentiation by understanding rate of change and using limits"
+keywords: ["differentiation", "intuition behind differentiation", "understanding differentiation"]
 tags: [
     "calculus",
     "differentiation"
 ]
 categories: [
-    "Math Intuition",
+    "Mathematics",
 ]
-series: ["Themes Guide"]
-aliases: ["migrate-from-jekyl"]
 ---
 For $y = f(x)$, differentiation is the ratio of **how $y$  changes** as **$x$ changes**. This is the rate of change of the function.
 
