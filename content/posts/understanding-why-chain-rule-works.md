@@ -12,8 +12,6 @@ categories: [
     "Mathematics",
 ]
 ---
-## Understanding Why Chain Rule Works
-
 > _"Mathematical intuition is the ability to see the truth without first having gone through a formal process of reasoning."_  
 > — Henri Poincaré
 
