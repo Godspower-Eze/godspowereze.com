@@ -42,7 +42,7 @@ Let's explore the behaviour of change in a function composition.
 
 Let's see the graph:
 
-<iframe src="https://www.desmos.com/calculator/yimwy1fmsz?embed" width="700" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/yimwy1fmsz?embed" width="100%" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 Let's build the intuition for this by looking at the table of values of $g(x)$, $f(x)$ $f(g(x))$ and $\dfrac{d}{dx}[f(g(x))]$ on the interval.
 
@@ -81,7 +81,7 @@ The examples below show some of these other behaviours of change.
 
 **Example 2**: For $g(x) = -x$ and $f(x) = x^3$ for an interval $x \in [-3,  3]$.
 
-<iframe src="https://www.desmos.com/calculator/ozvt0afldc?embed" width="700" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/ozvt0afldc?embed" width="100%" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 | $x$  | $g(x) = -x$ | $\dfrac{d}{dx}[g(x)] = -1$ | $f(x) = x^3$ | $\dfrac{d}{dx}[f(x)] = 3x^2$ | $f(g(x)) = -x^3$ | $\dfrac{d}{dx}[f(g(x))] = -3x^2$ |
 | ---- | ----------- | -------------------------- | ------------ | ---------------------------- | ---------------- | -------------------------------- |
@@ -95,7 +95,7 @@ The examples below show some of these other behaviours of change.
 
 **Example 3**: For $g(x) = x + 1$ and $f(x) = x^2+x$ for an interval $x \in [-2,  2]$.
 
-<iframe src="https://www.desmos.com/calculator/1snsjfddwm?embed" width="700" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/1snsjfddwm?embed" width="100%" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 | $x$  | $g(x) = x + 1$ | $\dfrac{d}{dx}[g(x)] = 1$ | $f(x) = x^2 + x$ | $\dfrac{d}{dx}[f(x)] = 2x + 1$ | $f(g(x)) = x^2 + 3x + 2$ | $\dfrac{d}{dx}[f(g(x))] = 2x + 3$ |
 | ---- | -------------- | ------------------------- | ---------------- | ------------------------------ | ------------------------ | --------------------------------- |
