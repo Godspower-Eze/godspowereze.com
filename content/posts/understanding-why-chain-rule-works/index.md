@@ -1,8 +1,9 @@
 ---
 author: "Godspower Eze"
 title: "Understanding Why Chain Rule Works"
+featuredImage: "/content/posts/understanding-why-chain-rule-works/chain-rule.gif"
 date: "2025-01-31"
-description: "Showing the intuition behind differentiation by understanding rate of change and using limits"
+description: "Showing the intuition behind the chain rule and understanding why chain rule works"
 keywords: ["differentiation", "intuition behind chain rule", "understanding differentiation", "understanding chain rule"]
 tags: [
     "calculus",
@@ -124,11 +125,27 @@ This is simply because as $x$ changes $g(x)$ changes and that's a _factor_ affec
 
 Why is the chain rule $\dfrac{d}{dx}[f(u)] = \dfrac{d}{du}f(u)*\dfrac{d}{dx}(u)$ and not $\dfrac{d}{dx}[f(u)] = \dfrac{d}{du}f(u)+\dfrac{d}{dx}(u)$?
 
-The intuition is in the definition: as $g(x)$ changes $f(g(x))$ _and_ as $x$ changes $g(x)$. For clarity: Let's break this statement into three part:
+We would look two ways to look at this: the first is a bit hand-wavy and the other is more intuitive.
+
+For the first one, the intuition lies is in the definition: as $g(x)$ changes $f(g(x))$ _and_ as $x$ changes $g(x)$. For clarity: Let's break this statement into three part:
 
 - as $g(x)$ changes $f(x)$ - $g(x)$ is treated as a variable
 - $x$ changes $g(x)$
 - _and_ - from binary operations, we know that _and_  implies multiplication. just like _or_ implies addition.
+
+Let's look the more intuitive way version: currency conversions!
+
+I have **Nigerian Naira (NGN)** and I want to convert it to **Pounds sterling(GBP)**. But, there's a little challenge: there are only two exchanges available; **NGN**/**USD** and **USD**/**GBP**. We would have to convert from **NGN** to **USD** and then, from **USD** to **GBP**. The rates are **1 USD = NGN1,500** and **1 GBP = 1.25 USD** respectively. How do we convert **NGN20,000** to **GBP**?
+
+First, we would convert to **USD**. **NGN20,000** to **USD** is **20,000/1500 = 13.33 USD**. Then, **USD** to **GBP** is **13.33 / 1.25 = 10.67 GBP**. That is, **NGN20,000** equals **10.67 GBP**. To get the rate of **NGN** to **GBP**, we multiply the both rates(.i.e **1/1500 x 1/1.25 = 1/1875**).
+
+The interesting thing is we can convert these individual conversions to functions. The function for converting **NGN** to **USD** would be $g(x) = \dfrac{x}{1500}$ and the one for converting from **USD** to **GBP** would be $f(x) = \dfrac{x}{1.25}$. The most interesting is the part of this is that the function for converting from **NGN** to **GBP** is function composition of $f(x)$ and $g(x)$! That is, $f(g(x)) = \dfrac{\dfrac{x}{1500}}{1.25} = \dfrac{x}{1875}$.
+
+If we apply the chain rule to the composite function $f(u)$ where $u = g(x)$, we have $\dfrac{d}{dx}[f(u)] = \dfrac{d}{du}f(u)*\dfrac{d}{dx}(u) = \dfrac{1}{1.25} * \dfrac{1}{1500} = \dfrac{1}{1875}$. That is our expected rate!
+
+But, if we change multiplication to addition to we have $\dfrac{d}{dx}[f(u)] = \dfrac{d}{du}f(u)+\dfrac{d}{dx}(u) = \dfrac{1}{1.25}+\dfrac{1}{1500}=\dfrac{1201}{1500}$. This is very wrong!
+
+I employ you to think of others ways asides currency conversions whereby this can be shown!
 
 ---
 I hope you were able to think wide and far about function compositions and the chain rule!
