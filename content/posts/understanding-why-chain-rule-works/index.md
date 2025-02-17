@@ -139,7 +139,7 @@ I have **Nigerian Naira (NGN)** and I want to convert it to **Pounds sterling(GB
 
 First, we would convert to **USD**. **NGN20,000** to **USD** is **20,000/1500 = 13.33 USD**. Then, **USD** to **GBP** is **13.33 / 1.25 = 10.67 GBP**. That is, **NGN20,000** equals **10.67 GBP**. To get the rate of **NGN** to **GBP**, we multiply the both rates(.i.e **1/1500 x 1/1.25 = 1/1875**).
 
-The interesting thing is we can convert these individual conversions to functions. The function for converting **NGN** to **USD** would be $g(x) = \dfrac{x}{1500}$ and the one for converting from **USD** to **GBP** would be $f(x) = \dfrac{x}{1.25}$. The most interesting is the part of this is that the function for converting from **NGN** to **GBP** is function composition of $f(x)$ and $g(x)$! That is, $f(g(x)) = \dfrac{\dfrac{x}{1500}}{1.25} = \dfrac{x}{1875}$.
+The interesting thing is we can convert these individual conversions to functions. The function for converting **NGN** to **USD** would be $g(x) = \dfrac{x}{1500}$ and the one for converting from **USD** to **GBP** would be $f(x) = \dfrac{x}{1.25}$. The most interesting part of this is that the function for converting from **NGN** to **GBP** is function composition of $f(x)$ and $g(x)$! That is, $f(g(x)) = \dfrac{\dfrac{x}{1500}}{1.25} = \dfrac{x}{1875}$.
 
 If we apply the chain rule to the composite function $f(u)$ where $u = g(x)$, we have $\dfrac{d}{dx}[f(u)] = \dfrac{d}{du}f(u)*\dfrac{d}{dx}(u) = \dfrac{1}{1.25} * \dfrac{1}{1500} = \dfrac{1}{1875}$. That is our expected rate!
 
