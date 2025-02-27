@@ -55,9 +55,9 @@ code = """
 [sharingbuttons]
 facebook = true
 twitter = true
-email = true
+email = false
 linkedin = true
-reddit = true
-whatsapp = true
-hackernews = true
-telegram = true
+reddit = false
+whatsapp = false
+hackernews = false
+telegram = false
