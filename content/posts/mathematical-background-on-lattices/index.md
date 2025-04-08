@@ -153,7 +153,7 @@ The graphical representation is displayed below. The length of the arrow is $5$.
 
 This graph would help us understand the next topic: ***$i$*-th successive minimum**
 
-![png](fundamentals_files/fundamentals_26_0.png)
+![png](fundamentals_files/fundamentals_24_0.png)
 
 Other norms include the *Manhattan Norm*, *Maximum Norm* and *p-norm*. For now, we only care about Euclidean norms.
 
@@ -163,7 +163,7 @@ Other norms include the *Manhattan Norm*, *Maximum Norm* and *p-norm*. For now, 
 
 The Euclidean Norm $||\mathbf{v}||_2$ of any vector $\mathbf{v}$ in a lattice $L$ can be interpreted as the **radius** $r$ of a circle (or sphere in higher dimensions) where the origin $(0, 0)$ of the graph is the centre of the circle as shown in the diagram below.
 
-![png](fundamentals_files/fundamentals_30_0.png)
+![png](fundamentals_files/fundamentals_28_0.png)
 
 Given a lattice $L$ and a norm(i.e. the Euclidean norm), the $i$-th successive minimum $\lambda_i(L)$ is the smallest radius $r$ such that $L$ contains at least $i$ linearly independent lattice vectors of norm at most $r$ within a ball of radius $r$ centered at the origin.
 
@@ -334,7 +334,7 @@ Let's look at an example using basis $v_1 = [2, 1]$ and $v_2 = [1, 3]$.
 
 First, the diagram below shows the lattice generate by this basis.
 
-![png](fundamentals_files/fundamentals_43_0.png)
+![png](fundamentals_files/fundamentals_47_0.png)
 
 Next, let's create the fundamental parallelepiped and show it.
 
@@ -350,7 +350,7 @@ That is, the fundamental parallelepiped $F = \lbrace[0, 0], [0.1, 0.3], [0.3, 0.
 
 Below is the what it looks like on a graph.
 
-![png](fundamentals_files/fundamentals_45_0.png)
+![png](fundamentals_files/fundamentals_49_0.png)
 
 Notice how it looks like a scaled down and compressed version of the lattice.
 
