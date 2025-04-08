@@ -187,7 +187,7 @@ Notice how it is the closest vector to the origin. It is called the smallest non
 
 ### Good and Bad Bases
 
-Given two bases $B_1 = \{ [1, 0], [0, 1] \}$ and $B_2 = \{[10, 1], [9, 1] \}$ that generate the same lattice(see *unimodular matrix* above), below they are labelled on the lattice they generate respectively.
+Given two bases $B_1 = \{ [1, 0], [0, 1] \}$ and $B_2 = \{[10, 1], [9, 1] \}$ that generate the same lattice(see [unimodular matrix](#unimodular-matrix)), below they are labelled on the lattice they generate respectively.
 
 ![png](fundamentals_files/fundamentals_34_0.png)
 
