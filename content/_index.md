@@ -7,7 +7,7 @@ I am an independent researcher and engineer exploring the power of **lattice-bas
 
 I have great conviction in the value of research and exploration based on **beauty**. This helps you consistently ask **why** without the pressure of a goal. Although it might not be obvious, this is how truly groundbreaking works are created.
 
-This is even more true in the field of **lattice-based cryptography**, which is a top candidate for post-quantum cryptography and its other applications, such as **Fully Homomorphic encryption(FHE)** and **Indistinguishability obfuscation(IO)**.
+This is even more true in the field of **lattice-based cryptography**, which is a top candidate for **post-quantum cryptography** and its other applications, such as **Fully Homomorphic encryption(FHE)** and **Indistinguishability obfuscation(IO)**.
 
 While on this search for beauty, I write **deep articles** and **develop tools**.
 
