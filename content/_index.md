@@ -9,7 +9,7 @@ I have great conviction in the value of research and exploration based on **beau
 
 This is even more true in the field of **lattice-based cryptography**, which is a top candidate for **post-quantum cryptography** and its other applications, such as **Fully Homomorphic encryption(FHE)** and **Indistinguishability obfuscation(IO)**.
 
-While on this search for beauty, I write **deep articles** and **develop tools**.
+While on this search for beauty, I **write deep articles** and **develop tools**.
 
 <!-- I am committed to this goal for the foreseeable future and would love your support on this journey. -->
 
