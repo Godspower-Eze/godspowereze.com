@@ -1,9 +1,9 @@
 ---
 author: "Godspower Eze"
-title: "Mathematical Background on Lattices - Introduction to Lattice-Based Cryptography"
+title: "Mathematical Background on Lattices - A Deep Dive on Lattice-Based Cryptography"
 date: "2025-02-27"
-description: "First in the series, Introduction to Lattice-based cryptography exploring the mathematical background and fundamentals of lattices"
-keywords: ["lattice-based cryptography", "introduction to lattice-based cryptography", "lattices", "mathematics of lattices"]
+description: "First in the series, A Deep Dive on Lattice-Based Cryptography exploring the mathematical background and fundamentals of lattices"
+keywords: ["lattice-based cryptography", "introduction to lattice-based cryptography", "lattices", "mathematics of lattices", "Deep Dive on Lattice-Based Cryptography"]
 tags: [
     "cryptography",
     "lattices",
@@ -12,7 +12,7 @@ categories: [
     "Cryptography",
 ]
 ---
-This is the first post in the series: **Introduction to Lattice-based Cryptography**. We focus on lattices as an independent mathematical concept and its properties. However, we focus on aspects that would be useful in the study of Lattice-based Cryptography.
+This is the first post in the series: **A Deep Dive on Lattice-Based Cryptography**. We focus on lattices as an independent mathematical concept and its properties. However, we focus on aspects that would be useful in the study of Lattice-based Cryptography.
 
 Throughout this series, we use 2-dimensions and 3-dimensions because they are easy to work with. In practice we use sufficiently higher dimensions.
 
