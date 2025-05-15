@@ -18,7 +18,7 @@ While on this search for beauty, I **write deep articles** and **build tools**.
 ### Current
 
 - <a href="/tags/lattices/" target="_blank">A Deep Dive on Lattice-Based Cryptography</a> - a series that takes you from zero to one in lattice-based cryptography. It aims to close the learning gap between "what is a lattice?" and how lattice-based cryptography is used in **Fully homomorphic encryption(FHE)** and **Indistinguishability obfuscation(IO)**.
-- <a href="https://github.com/Godspower-Eze/ml-kem.rs" target="_blank">ml-kem.rs</a> - a rust library for **ML-KEM(Module Lattice Key Encryption Mechanism)**
+- <a href="https://github.com/Godspower-Eze/pqc-ml-kem.rs" target="_blank">pqc-ml-kem.rs</a> - a rust library for **ML-KEM(Module Lattice Key Encryption Mechanism)**
 
 ### Previous
 
