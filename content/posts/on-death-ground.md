@@ -14,7 +14,7 @@ categories: [
 ---
 During the weekend I spent time with a friend. We talked at length about work and life in general.
 
-One idea that really stood out was Death Ground—the notion that while war is terrible for people, it often accelerates progress for nations because it forces rapid innovation and adaptation in ways peace rarely does.
+One idea that really stood out was **Death Ground**—the notion that while war is terrible for people, it often accelerates progress for nations because it forces rapid innovation and adaptation in ways peace rarely does.
 
 The story of Hernán Cortés illustrates this idea well. As narrated by ChatGPT:
 
