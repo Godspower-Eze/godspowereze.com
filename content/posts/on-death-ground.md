@@ -1,9 +1,9 @@
 ---
 author: "Godspower Eze"
 title: "On Death Ground"
-date: "2025-01-05"
-description: "Showing the intuition behind differentiation by understanding rate of change and using limits"
-keywords: ["differentiation", "intuition behind differentiation", "understanding differentiation"]
+date: "2026-01-05"
+description: "Being on death ground, staying in the arena and seeking feedback from reality"
+keywords: ["feedback from reality", "living in the arena"]
 tags: [
     "life",
     "reality"
@@ -12,7 +12,7 @@ categories: [
     "Life",
 ]
 ---
-During the weekend I spent the time with a friend. We talked at length about work and life in general.
+During the weekend I spent time with a friend. We talked at length about work and life in general.
 
 One idea that really stood out was Death Ground—the notion that while war is terrible for people, it often accelerates progress for nations because it forces rapid innovation and adaptation in ways peace rarely does.
 
