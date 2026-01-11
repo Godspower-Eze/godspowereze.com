@@ -793,7 +793,7 @@ $$\begin{aligned} V &=
 
 $$\begin{aligned} V &= 
      \begin{bmatrix} \omega_4^{0 * 0} & \omega_4^{0} & {\omega_4}^{0} & \omega_4^{0}
-     \\\\ \omega_4^{0} & \omega_4^{1} & {\omega_4}^{2} & \omega_4^{3}
+     \\\\[3pt] \omega_4^{0} & \omega_4^{1} & {\omega_4}^{2} & \omega_4^{3}
      \\\\ \omega_4^{0} & \omega_4^{2} & {\omega_4}^{4} & \omega_4^{6}
      \\\\  \omega_4^{0} & \omega_4^{3} & {\omega_4}^{6} & \omega_4^{9}
      \end{bmatrix} \\\\[2pt] &= 
@@ -1187,4 +1187,5 @@ Lastly, our example is just DFT translated to NTT. It's still runs in $O(n^2)$ t
 I understand this is quite a lot to take in so I advice to follow at your pace and as many times as you need. Feel free to ask questions in the comments too!
 
 In part two, we will be talking more about NTT and how it's used in lattice-based algorithms like ML-KEM and DSA. See you there!
+
 
