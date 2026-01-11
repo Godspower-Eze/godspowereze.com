@@ -12,7 +12,6 @@ categories: [
     "Cryptography",
 ]
 ---
-
 The need to make systems and algorithms faster so as to make them more practical has been ever constant in the world of software engineering and cryptography at large, and lattice-based cryptography is not left out.
 
 Number-theoretic Transform (NTT) was used in ML-KEM (Module-Lattice-Based Key-Encapsulation Mechanism), a lattice-based cryptographic algorithm used in establishing a shared secret key between two parties over a public channel. NTT is an analogue to the beautiful yet powerful Fast-fourier Transform (FTT).
@@ -86,7 +85,7 @@ Given two polynomials $f(x)$ and $g(x)$ of the form: $a_0 + a_1x + a_2x^2 + \cdo
 
 1. **Convert from coefficient to point representation**: we pick a set of $x$ values and evaluate the polynomials at those points thereby converting the polynomials to the point representation.
 
-   That is, we pick $x_i = \lbrace x_0, x_1, ... ,x_d \rbrace$. Then, we compute $f(x_i) = \lbrace f(x_0), f(x_1),...,f(x_d) \rbrace$ and $g(x_i) = \lbraceg (x_0), g(x_1),...,g(x_d) \rbrace$.
+   That is, we pick $x_i = \lbrace x_0, x_1, ... ,x_d \rbrace$. Then, we compute $f(x_i) = \lbrace f(x_0), f(x_1),...,f(x_d) \rbrace$ and $g(x_i) = \lbrace g(x_0), g(x_1),...,g(x_d) \rbrace$.
 
    There's a way of expressing this in a matrix form:
 
@@ -802,7 +801,7 @@ $$ \begin{aligned} V &=
      \\\\ 1 + 2e^{{3\pi\mathrm{i}}/2} 
      \\\\ 1 + 2e^{3\pi\mathrm{i}} 
      \\\\ 1 + 2e^{{9\pi\mathrm{i}}/2}
-     \end{bmatrix} \end{aligned}$$
+     \end{bmatrix} \end{aligned} $$
 
   $DFT(B)$:
 
