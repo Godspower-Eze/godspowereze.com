@@ -6,7 +6,7 @@ languageCode = "en"
 rssLimit = 10
 theme = "hugo-texify3"
 title = "Godspower Eze"
-description = "Hey"
+description = "Hey, I am Godspower Eze"
 
 [pagination]
 pagerSize = 5
