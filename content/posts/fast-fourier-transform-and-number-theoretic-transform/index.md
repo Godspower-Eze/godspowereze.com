@@ -740,11 +740,11 @@ Now, let's use roots of unit as those set $x$ values; our evaluation points. Giv
 
 With this, we have the following:
 
-$$ \begin{aligned} V &= \begin{bmatrix} \omega_n^{0*0} & \omega_n^{0*1} & {\omega_n}^{0*2} & \cdots & \omega_n^{0*(n - 1)} \\\\ \omega_n^{1*0} & \omega_n^{1*1} & \omega_n^{1*2} & \cdots & \omega_n^{1*(n - 1)} \\\\ \omega_n^{2*0} & \omega_n^{2*1} & \omega_n^{2*2} & \cdots & \omega_n^{2*(n - 1)} \\\\[0.3em] \vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em] \omega_n^{(n - 1)*0} & \omega_n^{(n - 1)*1} & \omega_n^{(n - 1)*2} & \cdots & \omega_n^{(n - 1)(n - 1)} \end{bmatrix} \\\\[2pt] &= \begin{bmatrix}\omega_n^0 & \omega_n^0 & \omega_n^0 & \cdots & \omega_n^0 \\\\ \omega_n^0 & \omega_n^1 & \omega_n^2 & \cdots & \omega_n^{n - 1} \\\\ \omega_n^0 & \omega_n^2 & \omega_n^4 & \cdots & \omega_n^{2n - 2} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em] \omega_n^0 & \omega_n^{n - 1} & \omega_n^{2n - 2} & \cdots & \omega_n^{n^2 - 2n + 1} \end{bmatrix} \end{aligned} $$
+$$\begin{aligned} V &= \begin{bmatrix} \omega_n^{0*0} & \omega_n^{0*1} & {\omega_n}^{0*2} & \cdots & \omega_n^{0*(n - 1)} \\\\ \omega_n^{1*0} & \omega_n^{1*1} & \omega_n^{1*2} & \cdots & \omega_n^{1*(n - 1)} \\\\ \omega_n^{2*0} & \omega_n^{2*1} & \omega_n^{2*2} & \cdots & \omega_n^{2*(n - 1)} \\\\[0.3em] \vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em] \omega_n^{(n - 1)*0} & \omega_n^{(n - 1)*1} & \omega_n^{(n - 1)*2} & \cdots & \omega_n^{(n - 1)(n - 1)} \end{bmatrix} \\\\[2pt] &= \begin{bmatrix}\omega_n^0 & \omega_n^0 & \omega_n^0 & \cdots & \omega_n^0 \\\\ \omega_n^0 & \omega_n^1 & \omega_n^2 & \cdots & \omega_n^{n - 1} \\\\ \omega_n^0 & \omega_n^2 & \omega_n^4 & \cdots & \omega_n^{2n - 2} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em] \omega_n^0 & \omega_n^{n - 1} & \omega_n^{2n - 2} & \cdots & \omega_n^{n^2 - 2n + 1} \end{bmatrix} \end{aligned}$$
 
 $$a = \begin{bmatrix}a_0 \\\\ a_1 \\\\ a_2 \\\\ \vdots \\\\ a_{n - 1}\end{bmatrix}$$
 
-$$\begin{aligned}  Va &= \begin{bmatrix}a_0\omega_n^0 + a_1\omega_n^0 + a_2\omega_n^0 + \cdots + a_{n - 1}w_n^0 \\\\ a_0\omega_n^0 + a_1\omega_n^1 + a_2\omega_n^2 + \cdots + a_{n - 1}\omega_n^{n - 1} \\\\ a_0\omega_n^0 + a_1\omega_n^2 + a_2\omega_n^4 + \cdots + a_{n - 1}\omega_n^{2n - 2} \\\\ \vdots \\\\ a_0\omega_n^0 + a_1\omega_n^{n - 1} + a_2\omega_n^{2n - 2} + \cdots + a_{n - 1}\omega_n^{n^2 - 2n + 1} \end{bmatrix} \\\\[2pt] &= \begin{bmatrix} f(\omega_n^0) \\\\ f(\omega_n^1) \\\\ f(\omega_n^2) \\\\ \vdots \\\\ f(\omega_n^{n - 1}) \end{bmatrix} \\\\[2pt] &= f(w_n^k) \end{aligned} $$
+$$\begin{aligned}  Va &= \begin{bmatrix}a_0\omega_n^0 + a_1\omega_n^0 + a_2\omega_n^0 + \cdots + a_{n - 1}w_n^0 \\\\ a_0\omega_n^0 + a_1\omega_n^1 + a_2\omega_n^2 + \cdots + a_{n - 1}\omega_n^{n - 1} \\\\ a_0\omega_n^0 + a_1\omega_n^2 + a_2\omega_n^4 + \cdots + a_{n - 1}\omega_n^{2n - 2} \\\\ \vdots \\\\ a_0\omega_n^0 + a_1\omega_n^{n - 1} + a_2\omega_n^{2n - 2} + \cdots + a_{n - 1}\omega_n^{n^2 - 2n + 1} \end{bmatrix} \\\\[2pt] &= \begin{bmatrix} f(\omega_n^0) \\\\ f(\omega_n^1) \\\\ f(\omega_n^2) \\\\ \vdots \\\\ f(\omega_n^{n - 1}) \end{bmatrix} \\\\[2pt] &= f(w_n^k) \end{aligned}$$
 
 Breifly, what is DFT? DFT is an algorithm that turns a signal from the time domain into the frequency domain. It used in Signal analysis, Image Compression and a lot more. 
 
@@ -962,7 +962,7 @@ Haven set the foundation, let's look at the FFT algorithm step by step.
 
 Starting from the DFT formula: $X[k] = \sum_{n=0}^{N-1} x[n]\, \omega_N^{kn}$
 
-- **Step 1**: We are going to split the formula into even/odd indices. Setting $n = 2m$ and $n = 2m + 1$ so that: $$\begin{aligned}X[k] &= \sum_{m=0}^{(N/2)-1} x[2m]\, \omega_N^{k(2m)} + \sum_{m=0}^{(N/2)-1} x[2m + 1]\, \omega_N^{k(2m + 1)} \\&= \sum_{m=0}^{(N/2)-1} x[2m]\, \omega_{N/2}^{km} + \omega_N^{k} \sum_{m=0}^{(N/2)-1} x[2m + 1]\, \omega_{N/2}^{km} \end{aligned}$$
+- **Step 1**: We are going to split the formula into even/odd indices. Setting $n = 2m$ and $n = 2m + 1$ so that: $$\begin{aligned} X[k] &= \sum_{m=0}^{(N/2)-1} x[2m]\, \omega_N^{k(2m)} + \sum_{m=0}^{(N/2)-1} x[2m + 1]\, \omega_N^{k(2m + 1)} \\\\ &= \sum_{m=0}^{(N/2)-1} x[2m]\, \omega_{N/2}^{km} + \omega_N^{k} \sum_{m=0}^{(N/2)-1} x[2m + 1]\, \omega_{N/2}^{km} \end{aligned}$$
 
   Notice the second property at play here.
 - **Step 2**: Let's label the parts:$$E[k] = \sum_{m=0}^{(N/2)-1} x[2m]\, \omega_{N/2}^{km}$$$$O[k] = \sum_{m=0}^{(N/2)-1} x[2m + 1]\, \omega_{N/2}^{km}$$ So that: $$X[k] = E[k] + \omega_N^{k}O[k]$$
@@ -979,7 +979,7 @@ To solve we just have to compute $E[0]$, $O[0]$, $E[1]$ and $O[1]$.
 
 $$\begin{aligned} E[0] &= \sum_{m=0}^{1} x[2m] \omega_{2}^{0} \\\\[2pt] &= \sum_{m=0}^{1} x[2m] \\\\[6pt] &= x[0] + x[2] \\\\[2pt] &= 1 + 3 \\\\[2pt] &= 4 \end{aligned}$$
 
-$$\begin{aligned} O[0] &= \sum_{m=0}^{1} x[2m] \\\\[2pt] &= x[1] + x[3] \\\\[2pt] &= 2 + 4 \\[6pt] &= 6 \end{aligned}$$
+$$\begin{aligned} O[0] &= \sum_{m=0}^{1} x[2m] \\\\[2pt] &= x[1] + x[3] \\\\[2pt] &= 2 + 4 \\\\[2pt] &= 6 \end{aligned}$$
 
 $$\begin{aligned} E[1] &= \sum_{m=0}^{1} x[2m]\omega_{2}^k \\\\[2pt] &= x[0] + x[2]\omega_{2} \\\\[2pt] &= 1 + (3\cdot-1) \\\\[2pt] &= -2 \end{aligned}$$
 
@@ -1039,7 +1039,7 @@ $$\begin{aligned} x[0] &= \dfrac{1}{4}(E[0] + \omega_4^{0}O[0]) \\\\[2pt] &= \df
 
 $$\begin{aligned} x[2] &= \dfrac{1}{4}(E[0] - O[0]) \\\\[2pt] &= \dfrac{1}{4}(8 + 4) \\\\[2pt] &= \dfrac{1}{4}(12) \\\\[2pt] &= 3 \end{aligned}$$
 
-$$\begin{aligned} x[1] &= \dfrac{1}{4}(E[1] + \omega_4^{-1}O[1]) \\\\[2pt] &= \dfrac{1}{4}(12 + (\omega_4^{-1} \cdot -4e^{{3\pi\mathrm{i}}/2})) \\\\[2pt] &= \dfrac{1}{4}(12 + (e^{{\pi\mathrm{i}}/2} \cdot -4e^{{3\pi\mathrm{i}}/2})) \\\\[2pt] &= \dfrac{1}{4}(12 - 4) \\\\[2pt] &= \dfrac{1}{4}(8) \\[6pt] &= 2 \end{aligned}$$
+$$\begin{aligned} x[1] &= \dfrac{1}{4}(E[1] + \omega_4^{-1}O[1]) \\\\[2pt] &= \dfrac{1}{4}(12 + (\omega_4^{-1} \cdot -4e^{{3\pi\mathrm{i}}/2})) \\\\[2pt] &= \dfrac{1}{4}(12 + (e^{{\pi\mathrm{i}}/2} \cdot -4e^{{3\pi\mathrm{i}}/2})) \\\\[2pt] &= \dfrac{1}{4}(12 - 4) \\\\[2pt] &= \dfrac{1}{4}(8) \\\\[2pt] &= 2 \end{aligned}$$
 
 $$\begin{aligned} x[3] &= \dfrac{1}{4}(E[1] - \omega_4^{-1}O[1]) \\\\[2pt] &= -\dfrac{1}{4}(12 - (\omega_4^{-1} \cdot -4e^{{3\pi\mathrm{i}}/2})) \\\\[2pt] &= \dfrac{1}{4}(12 - (e^{{\pi\mathrm{i}}/2} \cdot -4e^{{3\pi\mathrm{i}}/2})) \\\\[2pt] &= \dfrac{1}{4}(12 + 4) \\\\[2pt] &= \dfrac{1}{4}(16) \\\\[2pt] &= 4 \end{aligned}$$
 
