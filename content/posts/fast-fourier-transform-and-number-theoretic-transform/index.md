@@ -12,7 +12,7 @@ categories: [
     "Cryptography",
 ]
 ---
-The need to make systems and algorithms faster so as to make them more practical has been ever constant in the world of software engineering and cryptography at large, and lattice-based cryptography is not left out.
+he need to make systems and algorithms faster so as to make them more practical has been ever constant in the world of software engineering and cryptography at large, and lattice-based cryptography is not left out.
 
 Number-theoretic Transform (NTT) was used in ML-KEM (Module-Lattice-Based Key-Encapsulation Mechanism), a lattice-based cryptographic algorithm used in establishing a shared secret key between two parties over a public channel. NTT is an analogue to the beautiful yet powerful Fast-fourier Transform (FTT).
 
@@ -776,19 +776,19 @@ $$\begin{aligned} \omega_4 &= \lbrace \omega_4^{0}, \omega_4^{1}, \omega_4^{2}, 
 
 $$\begin{aligned} V &=
     \begin{bmatrix} \omega_4^{0 * 0} & \omega_4^{0 * 1} & \omega_4^{0 * 2} & \omega_4^{0 * 3}
-    \\\\ \omega_4^{1 * 0} & \omega_4^{1 * 1} & \omega_4^{1 * 2} & \omega_4^{1 * 3}
-    \\\\ \omega_4^{2 * 0} & \omega_4^{2 * 1} & \omega_4^{2 * 2} & \omega_4^{2 * 3} 
-    \\\\  \omega_4^{3 * 0} & \omega_4^{3 * 1} & \omega_4^{3 * 2} & \omega_4^{3 * 3} 
-    \end{bmatrix} \\\\[2pt] &=
+    \\\\[7pt] \omega_4^{1 * 0} & \omega_4^{1 * 1} & \omega_4^{1 * 2} & \omega_4^{1 * 3}
+    \\\\[7pt] \omega_4^{2 * 0} & \omega_4^{2 * 1} & \omega_4^{2 * 2} & \omega_4^{2 * 3} 
+    \\\\[7pt]  \omega_4^{3 * 0} & \omega_4^{3 * 1} & \omega_4^{3 * 2} & \omega_4^{3 * 3} 
+    \end{bmatrix} \\\\[5pt] &=
     \begin{bmatrix} \omega_4^{0} & \omega_4^{0} & \omega_4^{0} & \omega_4^{0}
-    \\\\ \omega_4^{0} & \omega_4^{1} & \omega_4^{2} & \omega_4^{3}
-    \\\\ \omega_4^{0} & \omega_4^{2} & \omega_4^{4} & \omega_4^{6}
-    \\\\  \omega_4^{0} & \omega_4^{3} & \omega_4^{6} & \omega_4^{9} 
-    \end{bmatrix} \\\\[2pt] &= 
+    \\\\[7pt] \omega_4^{0} & \omega_4^{1} & \omega_4^{2} & \omega_4^{3}
+    \\\\[7pt] \omega_4^{0} & \omega_4^{2} & \omega_4^{4} & \omega_4^{6}
+    \\\\[7pt]  \omega_4^{0} & \omega_4^{3} & \omega_4^{6} & \omega_4^{9} 
+    \end{bmatrix} \\\\[5pt] &= 
     \begin{bmatrix} 1 & 1 & 1 & 1 
-    \\\\ 1 & e^{{3\pi\mathrm{i}}/2} & e^{3\pi\mathrm{i}} & e^{{9\pi\mathrm{i}}/2}
-    \\\\ 1 & e^{3\pi\mathrm{i}} & e^{6\pi\mathrm{i}} & e^{9\pi\mathrm{i}}
-    \\\\ 1 & e^{{9\pi\mathrm{i}}/2} & e^{9\pi\mathrm{i}} & e^{{27\pi\mathrm{i}}/2} 
+    \\\\[7pt] 1 & e^{{3\pi\mathrm{i}}/2} & e^{3\pi\mathrm{i}} & e^{{9\pi\mathrm{i}}/2}
+    \\\\[7pt] 1 & e^{3\pi\mathrm{i}} & e^{6\pi\mathrm{i}} & e^{9\pi\mathrm{i}}
+    \\\\[7pt] 1 & e^{{9\pi\mathrm{i}}/2} & e^{9\pi\mathrm{i}} & e^{{27\pi\mathrm{i}}/2} 
     \end{bmatrix} \end{aligned}$$
 
 $$\begin{aligned} V &= 
@@ -1187,5 +1187,6 @@ Lastly, our example is just DFT translated to NTT. It's still runs in $O(n^2)$ t
 I understand this is quite a lot to take in so I advice to follow at your pace and as many times as you need. Feel free to ask questions in the comments too!
 
 In part two, we will be talking more about NTT and how it's used in lattice-based algorithms like ML-KEM and DSA. See you there!
+
 
 
