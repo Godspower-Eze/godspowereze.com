@@ -12,7 +12,7 @@ categories: [
     "Cryptography",
 ]
 ---
-he need to make systems and algorithms faster so as to make them more practical has been ever constant in the world of software engineering and cryptography at large, and lattice-based cryptography is not left out.
+The need to make systems and algorithms faster so as to make them more practical has been ever constant in the world of software engineering and cryptography at large, and lattice-based cryptography is not left out.
 
 Number-theoretic Transform (NTT) was used in ML-KEM (Module-Lattice-Based Key-Encapsulation Mechanism), a lattice-based cryptographic algorithm used in establishing a shared secret key between two parties over a public channel. NTT is an analogue to the beautiful yet powerful Fast-fourier Transform (FTT).
 
@@ -741,17 +741,17 @@ Now, let's use roots of unit as those set $x$ values; our evaluation points. Giv
 With this, we have the following:
 
 $$\begin{aligned} V &=
-\begin{bmatrix} \omega_n^{0*0} & \omega_n^{0*1} & \omega_n^{0*2} & \cdots & \omega_n^{0*(n - 1)}
-\\\\ \omega_n^{1 * 0} & \omega_n^{1*1} & \omega_n^{1*2} & \cdots & \omega_n^{1*(n - 1)}
-\\\\ \omega_n^{2*0} & \omega_n^{2*1} & \omega_n^{2*2} & \cdots & \omega_n^{2*(n - 1)}
-\\\\[0.3em] \vdots & \vdots & \vdots & \ddots & \vdots 
-\\\\[0.3em] \omega_n^{(n - 1)*0} & \omega_n^{(n - 1)*1} & \omega_n^{(n - 1)*2} & \cdots & \omega_n^{(n - 1)(n - 1)}
-\end{bmatrix} \\\\[2pt] &=
+\begin{bmatrix} \omega_n^{0 * 0} & \omega_n^{0 * 1} & \omega_n^{0 * 2} & \cdots & \omega_n^{0 * (n - 1)}
+\\\\[7pt] \omega_n^{1 * 0} & \omega_n^{1 * 1} & \omega_n^{1 * 2} & \cdots & \omega_n^{1 * (n - 1)}
+\\\\[7pt] \omega_n^{2 * 0} & \omega_n^{2 * 1} & \omega_n^{2 * 2} & \cdots & \omega_n^{2 * (n - 1)}
+\\\\[7pt] \vdots & \vdots & \vdots & \ddots & \vdots 
+\\\\[7pt] \omega_n^{(n - 1)*0} & \omega_n^{(n - 1) * 1} & \omega_n^{(n - 1) * 2} & \cdots & \omega_n^{(n - 1)(n - 1)}
+\end{bmatrix} \\\\[5pt] &=
 \begin{bmatrix} \omega_n^0 & \omega_n^0 & \omega_n^0 & \cdots & \omega_n^0
-\\\\ \omega_n^0 & \omega_n^1 & \omega_n^2 & \cdots & \omega_n^{n - 1}
-\\\\ \omega_n^0 & \omega_n^2 & \omega_n^4 & \cdots & \omega_n^{2n - 2}
-\\\\[0.3em] \vdots & \vdots & \vdots & \ddots & \vdots 
-\\\\[0.3em] \omega_n^0 & \omega_n^{n - 1} & \omega_n^{2n - 2} & \cdots & \omega_n^{n^2 - 2n + 1} \end{bmatrix} \end{aligned}$$
+\\\\[7pt] \omega_n^0 & \omega_n^1 & \omega_n^2 & \cdots & \omega_n^{n - 1}
+\\\\[7pt] \omega_n^0 & \omega_n^2 & \omega_n^4 & \cdots & \omega_n^{2n - 2}
+\\\\[7pt] \vdots & \vdots & \vdots & \ddots & \vdots 
+\\\\[7pt] \omega_n^0 & \omega_n^{n - 1} & \omega_n^{2n - 2} & \cdots & \omega_n^{n^2 - 2n + 1} \end{bmatrix} \end{aligned}$$
 
 $$a = \begin{bmatrix}a_0 \\\\ a_1 \\\\ a_2 \\\\ \vdots \\\\ a_{n - 1}\end{bmatrix}$$
 
@@ -790,23 +790,6 @@ $$\begin{aligned} V &=
     \\\\[7pt] 1 & e^{3\pi\mathrm{i}} & e^{6\pi\mathrm{i}} & e^{9\pi\mathrm{i}}
     \\\\[7pt] 1 & e^{{9\pi\mathrm{i}}/2} & e^{9\pi\mathrm{i}} & e^{{27\pi\mathrm{i}}/2} 
     \end{bmatrix} \end{aligned}$$
-
-$$\begin{aligned} V &= 
-     \begin{bmatrix} \omega_4^{0 * 0} & \omega_4^{0 * 1} & {\omega_4}^{0 * 2} & \omega_4^{0 * 3}
-     \\\\[6pt] \omega_4^{1 * 0} & \omega_4^{1} & {\omega_4}^{2} & \omega_4^{3}
-     \\\\[6pt] \omega_4^{2 * 0} & \omega_4^{2} & {\omega_4}^{4} & \omega_4^{6}
-     \\\\[6pt]  \omega_4^{3 * 0} & \omega_4^{3} & {\omega_4}^{6} & \omega_4^{9}
-     \end{bmatrix} \\\\[2pt] &= 
-     \begin{bmatrix} \omega_4^{0} & \omega_4^{0} & {\omega_4}^{0} & \omega_4^{0}
-     \\\\[6pt] \omega_4^{0} & \omega_4^{1} & {\omega_4}^{2} & \omega_4^{3}
-     \\\\[6pt] \omega_4^{0} & \omega_4^{2} & {\omega_4}^{4} & \omega_4^{6}
-     \\\\[6pt]  \omega_4^{0} & \omega_4^{3} & {\omega_4}^{6} & \omega_4^{9}
-     \end{bmatrix} \\\\[2pt] &= 
-     \begin{bmatrix} 1 & 1 & 1 & 1 
-     \\\\[6pt] 1 & e^{{\pi\mathrm{i}}/2} & e^{\pi\mathrm{i}} & e^{{3\pi\mathrm{i}}/2}
-     \\\\[6pt] 1 & e^{\pi\mathrm{i}} & e^{2\pi\mathrm{i}} & e^{3\pi\mathrm{i}}
-     \\\\[6pt] 1 & e^{{3\pi\mathrm{i}}/2} & e^{3\pi\mathrm{i}} & e^{{9\pi\mathrm{i}}/2}
-     \end{bmatrix} \end{aligned}$$
 
 - **Step 2**: Compute the DFT of $A(x)$ and $B(x)$, $\mathrm{DFT}(A)$ and $\mathrm{DFT}(B)$ respectively.
 
