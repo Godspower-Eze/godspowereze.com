@@ -12,7 +12,6 @@ categories: [
     "Cryptography",
 ]
 ---
-
 The need to make systems and algorithms faster so as to make them more practical has been ever constant in the world of software engineering and cryptography at large, and lattice-based cryptography is not left out.
 
 Number-theoretic Transform (NTT) was used in ML-KEM (Module-Lattice-Based Key-Encapsulation Mechanism), a lattice-based cryptographic algorithm used in establishing a shared secret key between two parties over a public channel. NTT is an analogue to the beautiful yet powerful Fast-fourier Transform (FTT).
@@ -90,11 +89,11 @@ Given two polynomials $f(x)$ and $g(x)$ of the form: $a_0 + a_1x + a_2x^2 + \cdo
 
    There's a way of expressing this in a matrix form:
 
-   $$ \begin{aligned} V &= \begin{bmatrix}x_0^0 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ x_1^0 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ x_2^0 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em]x_n^0 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} \\\\[6pt] &= \begin{bmatrix}1 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ 1 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ 1 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em]1 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} \end{aligned} $$
+   $$ \begin{aligned} V &= \begin{bmatrix}x_0^0 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ x_1^0 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ x_2^0 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em]x_n^0 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} \\\\[2pt] &= \begin{bmatrix}1 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ 1 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ 1 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em] 1 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} \end{aligned} $$
 
    $$a = \begin{bmatrix}a_0 \\ a_1 \\ a_2 \\ \vdots \\ a_n\end{bmatrix}$$
 
-   $$\begin{aligned} Va &= \begin{bmatrix}a_0x_0^0 + a_1x_0^1 + a_2x_0^2 + \cdots + a_nx_0^n\\ a_0x_1^0 + a_1x_1^1 + a_2x_1^2 + \cdots + a_nx_1^n \\ a_0x_2^0 + a_1x_2^1 + a_2x_2^2 + \cdots + a_nx_2^n \\ \vdots \\ a_0x_n^0 + a_1x_n^1 + a_2x_n^2 + \cdots + a_nx_n^n \end{bmatrix}\\[6pt] &= \begin{bmatrix} f(x_0) \\ f(x_1) \\ f(x_2) \\ \vdots \\ f(x_n) \end{bmatrix} \end{aligned} $$
+   $$\begin{aligned} Va &= \begin{bmatrix}a_0x_0^0 + a_1x_0^1 + a_2x_0^2 + \cdots + a_nx_0^n\\ a_0x_1^0 + a_1x_1^1 + a_2x_1^2 + \cdots + a_nx_1^n \\ a_0x_2^0 + a_1x_2^1 + a_2x_2^2 + \cdots + a_nx_2^n \\ \vdots \\ a_0x_n^0 + a_1x_n^1 + a_2x_n^2 + \cdots + a_nx_n^n \end{bmatrix} \\\\[6pt] &= \begin{bmatrix} f(x_0) \\ f(x_1) \\ f(x_2) \\ \vdots \\ f(x_n) \end{bmatrix} \end{aligned} $$
 
    $$ Va = f(x_i)$$
 
@@ -106,7 +105,7 @@ Given two polynomials $f(x)$ and $g(x)$ of the form: $a_0 + a_1x + a_2x^2 + \cdo
 
    Using $A(x)$ as an example, choosing $n = 4$ and $x =\{x_0, x_1, x_2, x_3, x_4\}= \{-5, -4, -3, -2, -1\}$, we have the following:
 
-   $$\begin{aligned} V &= \begin{bmatrix}1 & x_0 & x_0^2 & x_0^3 & x_0^4 \\1 & x_1 & x_1^2 & x_1^3 & x_1^4 \\1 & x_2 & x_2^2 & x_2^3 & x_2^4 \\1 & x_3 & x_3^2 & x_3^3 & x_3^4 \\1 & x_4 & x_4^2 & x_4^3 & x_4^4 \end{bmatrix} \\\\[6pt] &= \begin{bmatrix}1 & -5 & -5^2 & -5^3 & -5^4 \\ 1 & -4 & -4^2 & -4^3 & -4^4 \\ 1 & -3 & -3^2 & -3^3 & -3^4 \\ 1 & -2 & -2^2 & -2^3 & -2^4 \\ 1 & -1 & -1^2 & -1^3 & -1^4 \end{bmatrix} \\\\[6pt] &= \begin{bmatrix}1 & -5 & 25 & -125 & 625 \\1 & -4 & 16 & -64 & 256 \\1 & -3 & 9 & -27 & 81 \\1 & -2 & 4 & -8 & 16 \\1 & -1 & 1 & -1 & 1\end{bmatrix} \end{aligned}$$
+   $$\begin{aligned} V &= \begin{bmatrix}1 & x_0 & x_0^2 & x_0^3 & x_0^4 \\1 & x_1 & x_1^2 & x_1^3 & x_1^4 \\1 & x_2 & x_2^2 & x_2^3 & x_2^4 \\1 & x_3 & x_3^2 & x_3^3 & x_3^4 \\1 & x_4 & x_4^2 & x_4^3 & x_4^4 \end{bmatrix} \\\\[2pt] &= \begin{bmatrix}1 & -5 & -5^2 & -5^3 & -5^4 \\ 1 & -4 & -4^2 & -4^3 & -4^4 \\ 1 & -3 & -3^2 & -3^3 & -3^4 \\ 1 & -2 & -2^2 & -2^3 & -2^4 \\ 1 & -1 & -1^2 & -1^3 & -1^4 \end{bmatrix} \\\\[2pt] &= \begin{bmatrix}1 & -5 & 25 & -125 & 625 \\1 & -4 & 16 & -64 & 256 \\1 & -3 & 9 & -27 & 81 \\1 & -2 & 4 & -8 & 16 \\1 & -1 & 1 & -1 & 1\end{bmatrix} \end{aligned}$$
 
    $$a = \begin{bmatrix}a_0 \\ a_1 \\ a_2 \\ a_3 \\ a_4\end{bmatrix} = \begin{bmatrix}3 \\ -4 \\ 1 \\ 0 \\ 0\end{bmatrix}$$
 
@@ -741,11 +740,11 @@ Now, let's use roots of unit as those set $x$ values; our evaluation points. Giv
 
 With this, we have the following:
 
-   $$ \begin{aligned} V &= \begin{bmatrix} \omega_n^{0*0} & \omega_n^{0*1} & {\omega_n}^{0*2} & \cdots & \omega_n^{0*(n - 1)} \\ \omega_n^{1*0} & \omega_n^{1*1} & \omega_n^{1*2} & \cdots & \omega_n^{1*(n - 1)} \\ \omega_n^{2*0} & \omega_n^{2*1} & \omega_n^{2*2} & \cdots & \omega_n^{2*(n - 1)} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em]\omega_n^{(n - 1)*0} & \omega_n^{(n - 1)*1} & \omega_n^{(n - 1)*2} & \cdots & \omega_n^{(n - 1)(n - 1)} \end{bmatrix} \\[3pt] &= \begin{bmatrix}\omega_n^0 & \omega_n^0 & \omega_n^0 & \cdots & \omega_n^0 \\ \omega_n^0 & \omega_n^1 & \omega_n^2 & \cdots & \omega_n^{n - 1} \\ \omega_n^0 & \omega_n^2 & \omega_n^4 & \cdots & \omega_n^{2n - 2} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em] \omega_n^0 & \omega_n^{n - 1} & \omega_n^{2n - 2} & \cdots & \omega_n^{n^2 - 2n + 1} \end{bmatrix} \end{aligned} $$
+   $$ \begin{aligned} V &= \begin{bmatrix} \omega_n^{0*0} & \omega_n^{0*1} & {\omega_n}^{0*2} & \cdots & \omega_n^{0*(n - 1)} \\ \omega_n^{1*0} & \omega_n^{1*1} & \omega_n^{1*2} & \cdots & \omega_n^{1*(n - 1)} \\ \omega_n^{2*0} & \omega_n^{2*1} & \omega_n^{2*2} & \cdots & \omega_n^{2*(n - 1)} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em]\omega_n^{(n - 1)*0} & \omega_n^{(n - 1)*1} & \omega_n^{(n - 1)*2} & \cdots & \omega_n^{(n - 1)(n - 1)} \end{bmatrix} \\\\[2pt] &= \begin{bmatrix}\omega_n^0 & \omega_n^0 & \omega_n^0 & \cdots & \omega_n^0 \\ \omega_n^0 & \omega_n^1 & \omega_n^2 & \cdots & \omega_n^{n - 1} \\ \omega_n^0 & \omega_n^2 & \omega_n^4 & \cdots & \omega_n^{2n - 2} \\\\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\\\[0.3em] \omega_n^0 & \omega_n^{n - 1} & \omega_n^{2n - 2} & \cdots & \omega_n^{n^2 - 2n + 1} \end{bmatrix} \end{aligned} $$
 
    $$a = \begin{bmatrix}a_0 \\ a_1 \\ a_2 \\ \vdots \\ a_{n - 1}\end{bmatrix}$$
 
-   $$\begin{aligned}  Va &= \begin{bmatrix}a_0\omega_n^0 + a_1\omega_n^0 + a_2\omega_n^0 + \cdots + a_{n - 1}w_n^0 \\ a_0\omega_n^0 + a_1\omega_n^1 + a_2\omega_n^2 + \cdots + a_{n - 1}\omega_n^{n - 1} \\ a_0\omega_n^0 + a_1\omega_n^2 + a_2\omega_n^4 + \cdots + a_{n - 1}\omega_n^{2n - 2} \\ \vdots \\ a_0\omega_n^0 + a_1\omega_n^{n - 1} + a_2\omega_n^{2n - 2} + \cdots + a_{n - 1}\omega_n^{n^2 - 2n + 1} \end{bmatrix} \\\\[6pt] &= \begin{bmatrix} f(\omega_n^0) \\ f(\omega_n^1) \\ f(\omega_n^2) \\ \vdots \\ f(\omega_n^{n - 1}) \end{bmatrix} \\\\[6pt] &= f(w_n^k) \end{aligned} $$
+   $$\begin{aligned}  Va &= \begin{bmatrix}a_0\omega_n^0 + a_1\omega_n^0 + a_2\omega_n^0 + \cdots + a_{n - 1}w_n^0 \\ a_0\omega_n^0 + a_1\omega_n^1 + a_2\omega_n^2 + \cdots + a_{n - 1}\omega_n^{n - 1} \\ a_0\omega_n^0 + a_1\omega_n^2 + a_2\omega_n^4 + \cdots + a_{n - 1}\omega_n^{2n - 2} \\ \vdots \\ a_0\omega_n^0 + a_1\omega_n^{n - 1} + a_2\omega_n^{2n - 2} + \cdots + a_{n - 1}\omega_n^{n^2 - 2n + 1} \end{bmatrix} \\\\[2pt] &= \begin{bmatrix} f(\omega_n^0) \\ f(\omega_n^1) \\ f(\omega_n^2) \\ \vdots \\ f(\omega_n^{n - 1}) \end{bmatrix} \\\\[2pt] &= f(w_n^k) \end{aligned} $$
 
 Breifly, what is DFT? DFT is an algorithm that turns a signal from the time domain into the frequency domain. It used in Signal analysis, Image Compression and a lot more. 
 
@@ -762,7 +761,7 @@ Let's see an example. Using the $4$th roots of unity, let's compute $C(x) = A(x)
 
   $$\omega_4 = e^{{3\pi\mathrm{i}}/2}$$
 
-  $$\begin{aligned} \omega_4 &= \{ \omega_4^{0}, \omega_4^{1}, \omega_4^{2}, \omega_4^{3} \} \\[6pt] &= \{ 1, e^{{3\pi\mathrm{i}}/2}, e^{3\pi\mathrm{i}}, e^{{9\pi\mathrm{i}}/2} \} \end{aligned} $$  
+  $$\begin{aligned} \omega_4 &= \{ \omega_4^{0}, \omega_4^{1}, \omega_4^{2}, \omega_4^{3} \} \\\\[2pt] &= \{ 1, e^{{3\pi\mathrm{i}}/2}, e^{3\pi\mathrm{i}}, e^{{9\pi\mathrm{i}}/2} \} \end{aligned} $$  
 
 $$ \begin{aligned} V &= 
      \begin{bmatrix}
@@ -770,12 +769,12 @@ $$ \begin{aligned} V &=
      \\ \omega_4^{1*0} & \omega_4^{1*1} & {\omega_4}^{1*2} & \omega_4^{1*3} 
      \\ \omega_4^{2*0} & \omega_4^{2*1} & {\omega_4}^{2*2} & \omega_4^{2*3} 
      \\  \omega_4^{3*0} & \omega_4^{3*1} & {\omega_4}^{3*2} & \omega_4^{3*3}
-     \end{bmatrix} \\[6pt] &= 
+     \end{bmatrix} \\\\[2pt] &= 
      \begin{bmatrix} \omega_4^{0} & \omega_4^{0} & {\omega_4}^{0} & \omega_4^{0}
      \\ \omega_4^{0} & \omega_4^{1} & {\omega_4}^{2} & \omega_4^{3}
      \\ \omega_4^{0} & \omega_4^{2} & {\omega_4}^{4} & \omega_4^{6}
      \\  \omega_4^{0} & \omega_4^{3} & {\omega_4}^{6} & \omega_4^{9}
-     \end{bmatrix} \\[6pt] &= 
+     \end{bmatrix} \\\\[2pt] &= 
      \begin{bmatrix} 1 & 1 & 1 & 1 
      \\ 1 & e^{{3\pi\mathrm{i}}/2} & e^{3\pi\mathrm{i}} & e^{{9\pi\mathrm{i}}/2}
      \\ 1 & e^{3\pi\mathrm{i}} & e^{6\pi\mathrm{i}} & e^{9\pi\mathrm{i}}
@@ -797,7 +796,7 @@ $$ \begin{aligned} V &=
      \\ (1 \cdot 1) + (e^{{3\pi\mathrm{i}}/2} \cdot 2)
      \\ (1 \cdot 1) + (e^{3\pi\mathrm{i}} \cdot 2)  
      \\ (1 \cdot 1) + (e^{{9\pi\mathrm{i}}/2} \cdot 2) 
-     \end{bmatrix} \\[6pt] &= 
+     \end{bmatrix} \\\\[2pt] &= 
      \begin{bmatrix} 3 
      \\ 1 + 2e^{{3\pi\mathrm{i}}/2} 
      \\ 1 + 2e^{3\pi\mathrm{i}} 
@@ -813,7 +812,7 @@ $$ \begin{aligned} V &=
      \\ (1 \cdot 3) + (e^{{3\pi\mathrm{i}}/2} \cdot 4) 
      \\ (1 \cdot 3) + (e^{3\pi\mathrm{i}} \cdot 4) 
      \\ (1 \cdot 3) + (e^{{9\pi\mathrm{i}}/2} \cdot 4) 
-     \end{bmatrix} \\[6pt] &= 
+     \end{bmatrix} \\\\[2pt] &= 
      \begin{bmatrix} 7 
      \\ 3 + 4e^{{3\pi\mathrm{i}}/2}
      \\ 3 + 4e^{3\pi\mathrm{i}} 
@@ -834,7 +833,7 @@ $$\begin{aligned} DFT(A) \cdot DFT(B) &=
      \\ 3 + 4e^{3\pi\mathrm{i}} 
      \\ 3 + 4e^{{9\pi\mathrm{i}}/2} 
      \end{bmatrix}
-     \\\\[6pt] &= 
+     \\\\[2pt] &= 
      \begin{bmatrix}
      21
      \\ 3 + 10e^{{3\pi\mathrm{i}}/2} + 8e^{3\pi\mathrm{i}}
@@ -859,7 +858,7 @@ $$\begin{aligned} V &=
      \\ \omega_4^{0} & \omega_4^{1} & {\omega_4}^{2} & \omega_4^{3}
      \\ \omega_4^{0} & \omega_4^{2} & {\omega_4}^{4} & \omega_4^{6}
      \\  \omega_4^{0} & \omega_4^{3} & {\omega_4}^{6} & \omega_4^{9}
-     \end{bmatrix} \\\\[6pt] &= 
+     \end{bmatrix} \\\\[2pt] &= 
      \begin{bmatrix} 1 & 1 & 1 & 1 
      \\ 1 & e^{{\pi\mathrm{i}}/2} & e^{\pi\mathrm{i}} & e^{{3\pi\mathrm{i}}/2}
      \\ 1 & e^{\pi\mathrm{i}} & e^{2\pi\mathrm{i}} & e^{3\pi\mathrm{i}}
@@ -885,14 +884,14 @@ $$\begin{aligned} Va &= \begin{bmatrix} 1 & 1 & 1 & 1
      \\ 3 + 10e^{3\pi\mathrm{i}} + 8e^{6\pi\mathrm{i}}
      \\ 3 + 10e^{{9\pi\mathrm{i}}/2} + 8e^{9\pi\mathrm{i}}
      \end{bmatrix}
-     \\\\[6pt] &=
+     \\\\[2pt] &=
     \begin{bmatrix}
      21 + (3 + 10e^{{3\pi\mathrm{i}}/2} + 8e^{3\pi\mathrm{i}}) + (3 + 10e^{3\pi\mathrm{i}} + 8e^{6\pi\mathrm{i}}) + (3 + 10e^{{9\pi\mathrm{i}}/2} + 8e^{9\pi\mathrm{i}})
      \\  21 + (e^{{\pi\mathrm{i}}/2} \cdot (3 + 10e^{{3\pi\mathrm{i}}/2} + 8e^{3\pi\mathrm{i}})) + (e^{\pi\mathrm{i}} \cdot (3 + 10e^{3\pi\mathrm{i}} + 8e^{6\pi\mathrm{i}})) + (e^{{3\pi\mathrm{i}}/2} \cdot (3 + 10e^{{9\pi\mathrm{i}}/2} + 8e^{9\pi\mathrm{i}}))
      \\  21 + (e^{\pi\mathrm{i}}  \cdot (3 + 10e^{{3\pi\mathrm{i}}/2} + 8e^{3\pi\mathrm{i}})) + (e^{2\pi\mathrm{i}} \cdot (3 + 10e^{3\pi\mathrm{i}} + 8e^{6\pi\mathrm{i}})) + (e^{3\pi\mathrm{i}} \cdot (3 + 10e^{{9\pi\mathrm{i}}/2} + 8e^{9\pi\mathrm{i}}))
      \\  21 + (e^{{3\pi\mathrm{i}}/2} \cdot (3 + 10e^{{3\pi\mathrm{i}}/2} + 8e^{3\pi\mathrm{i}})) + (e^{3\pi\mathrm{i}} \cdot (3 + 10e^{3\pi\mathrm{i}} + 8e^{6\pi\mathrm{i}})) + (e^{{9\pi\mathrm{i}}/2} \cdot (3 + 10e^{{9\pi\mathrm{i}}/2} + 8e^{9\pi\mathrm{i}}))
      \end{bmatrix}
-     \\\\[6pt] &=
+     \\\\[2pt] &=
     \begin{bmatrix}
      12
      \\ 40
@@ -908,7 +907,7 @@ $$\begin{aligned}IDFT(DFT(A)\cdot DFT(B)) &= \dfrac{1}{N}Va \\\\[2pt] &= \dfrac{
      \\ 32
      \\ 0
      \end{bmatrix}
-     \\\\[6pt] &=
+     \\\\[2pt] &=
      \begin{bmatrix}
      3
      \\ 10
