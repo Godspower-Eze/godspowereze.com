@@ -89,7 +89,7 @@ Given two polynomials $f(x)$ and $g(x)$ of the form: $a_0 + a_1x + a_2x^2 + \cdo
 
    There's a way of expressing this in a matrix form:
 
-   $ \begin{aligned} V &= \begin{bmatrix}x_0^0 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ x_1^0 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ x_2^0 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\[0.3em]x_n^0 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} \\[6pt] &= \begin{bmatrix}1 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ 1 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ 1 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\[0.3em]1 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} \end{aligned} $
+   $$V = \begin{bmatrix}x_0^0 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ x_1^0 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ x_2^0 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\[0.3em]x_n^0 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} \\[6pt] = \begin{bmatrix}1 & x_0^1 & x_0^2 & \cdots & x_0^{n} \\ 1 & x_1^1 & x_1^2 & \cdots & x_1^{n} \\ 1 & x_2^1 & x_2^2 & \cdots & x_2^{n} \\[0.3em]\vdots & \vdots & \vdots & \ddots & \vdots \\[0.3em]1 & x^1_{n} & x_{n}^2 & \cdots & x_{n}^{n}\end{bmatrix} $$
 
    $$a = \begin{bmatrix}a_0 \\ a_1 \\ a_2 \\ \vdots \\ a_n\end{bmatrix}$$
 
