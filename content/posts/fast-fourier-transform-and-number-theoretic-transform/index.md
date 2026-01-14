@@ -28,7 +28,7 @@ Given two polynomials $A$ and $B$ of degree 2 :
 
 We are asked to multiply them. Easy, right?
 
-- $C = A\ast B = (3 - 4x + x^2)(6 - 5x + x^2) = 3 * (6 - 5x + x^2) - 4x * (6 - 5x + x^2) + x^2 * (6 - 5x + x^2) = 18 + 39x + 29x^2 - 9x^3 + x^4$
+- $C = A\ast B = (3 - 4x + x^2)(6 - 5x + x^2) = 3 * (6 - 5x + x^2) - 4x * (6 - 5x + x^2) + x^2 * (6 - 5x + x^2) = 18 - 39x + 29x^2 - 9x^3 + x^4$
 
 Below is an implementation of this in Python:
 
@@ -43,7 +43,7 @@ C = [0 for _ in range((2 * d) + 1)]
 
 for i in range(d + 1):
 	for j in range(d + 1):
-		C[i + j] = A[i] * B[j]
+		C[i + j] += A[i] * B[j]
 ```
 
 This algorithm takes $O(d^2)$ time. Is there a faster way to perform polynomial multiplication?
