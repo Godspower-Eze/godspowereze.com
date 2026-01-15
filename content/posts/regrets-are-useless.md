@@ -54,4 +54,4 @@ I came to these conclusions after engaging in the many rituals of ruminating and
 
 Everyone is a genius in hindsight.
 
-This, my friend, is why I strongly believe that regrets are useless. Mistakes are a feature, not bug and you can also always make better decisions as long as you are alive.
+This, my friend, is why I strongly believe that regrets are useless. Mistakes are a feature, not bug and you can always make better decisions as long as you are alive.
