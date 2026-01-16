@@ -48,7 +48,7 @@ With this new set of points, there are $11^{34}$ possible paths. Mind you these 
 
 Furthermore, we will denote each of these paths as realities. If each path is a reality then there is a reality for every single outcome imaginable on the surface of the Earth. From the best to the worst. It would interest you to know that there are realities where you are living your perfect dream life but It would probably scare you to know the numbers of realities where your life is exponentially worse than you can ever imagine.
 
-What am I saying in essence? You are exponentially more luckier than the luckiest lottery winner to have breath in your lungs and be reading this right now. The odds that your alive right to more or less zero.
+What am I saying in essence? You are exponentially more luckier than the luckiest lottery winner to have breath in your lungs and be reading this right now. The odds that you are alive right is more or less zero.
 
 I came to these conclusions after engaging in the many rituals of ruminating and replaying events and wishing I could of taken different actions. I noticed how it made me feel worse and how it was my ego sticking it’s head out after seeing everything clearly in hindsight. It’s like bragging about how you could have done better on a test after seeing the test answers. It’s fruitless.
 
