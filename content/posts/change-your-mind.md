@@ -25,4 +25,8 @@ This has been me over the past few months. I have had to learn and change fast. 
 
 This is also true with the rise of AI. I have changed my mind from staying on the sidelines, to using one or two tools, to understanding that it is here to stay — and that it is very unwise to ignore it. As an engineer, my current stance is that AI makes writing code cheap, but it also gives us a new superpower. Our goal is to figure out what that superpower is, and the only way to do that is by using these tools.
 
+Someone might ask how to know when to change your mind. I would dare say that keeping an open mind solves most of this. The issue, most times, is not the veracity of the opposing stance but your inability to let it into your reasoning faculty. Let it in, and let your intelligence handle the rest. Also understand that you don’t always have to change, but you do have to let it in.
+
+You might also ask how to change your mind without your back being against the wall. I’m not sure how to do that, but I think it’s worth figuring out.
+
 So, my friend, hold strong opinions — but hold them loosely. Remain porous to new ideas and be willing to change your mind quickly.
