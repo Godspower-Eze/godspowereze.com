@@ -26,7 +26,7 @@ While on this search for beauty, I **write deep articles** and **build tools**.
 - <a href="https://www.modcc.xyz/" target="_blank">modcc.xyz</a>  - a tool for the sumcheck protocol. It computes **univariate lagrange interpolation over finite field**, **multilinear interpolation over the boolean hypercube** and **multivariate lagrange interpolation over finite field**.(Watch <a href="https://www.loom.com/share/4e2e53047b2542d4b79fc0fb10d7f66e?sid=6c2f7566-2675-49c2-82a1-0edf7ad2dc76" target="_blank"> demo</a>)
 - <a href="https://github.com/Godspower-Eze/learn-cryptography-and-zk" target="_blank">learn-cryptography-and-zk</a> - A collection of cryptographic and zero-knowledge algorithms explained simply and implemented from scratch in Python and Rust
 - <a href="https://github.com/Godspower-Eze/notes-on-ZK-and-Complexity-Theory" target="_blank">notes-on-ZK-and-Complexity-Theory</a> - A deep dive into the Sumcheck Protocol and some complexity theory.
-- Blockchain Core Engineer, <a href="https://github.com/lambdaclass/lambda_ethereum_consensus" target="_blank">The Elixir Consensus Client</a>
+- Protocol Engineer, <a href="https://github.com/lambdaclass/lambda_ethereum_consensus/pulls?q=is%3Apr+is%3Aclosed+author%3AGodspower-Eze" target="_blank">The Elixir Consensus Client</a>
 
 ## Code for life
 >
